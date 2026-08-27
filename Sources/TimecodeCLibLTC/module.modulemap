@@ -1,0 +1,5 @@
+module TimecodeCLibLTC [system] {
+    header "shim.h"
+    link "ltc"
+    export *
+}
