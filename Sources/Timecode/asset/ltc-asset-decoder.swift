@@ -1,5 +1,6 @@
 import Foundation
 import MediaAV
+import MediaCore
 
 public extension LTC {
     struct AssetDecoder: Sendable {
