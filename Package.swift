@@ -58,9 +58,11 @@ let package = Package(
             name: "TimecodeCLibLTC",
             pkgConfig: "ltc",
             providers: [
-                .brew([
-                    "libltc",
-                ]),
+                .brew(
+                    [
+                        "libltc",
+                    ]
+                ),
             ]
         ),
         .target(
