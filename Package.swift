@@ -20,12 +20,7 @@ let package = Package(
                 "TimecodeCLI",
             ]
         ),
-        .executable(
-            name: "timecodetest",
-            targets: [
-                "TimecodeTestFlows",
-            ]
-        ),
+        .library(name: "TimecodeLTCBridge", targets: ["TimecodeLTCBridge"]),
     ],
     dependencies: [
         .package(
@@ -38,18 +33,6 @@ let package = Package(
         ),
         .package(
             url: "https://github.com/leviouwendijk/Terminal.git",
-            branch: "master"
-        ),
-        .package(
-            url: "https://github.com/leviouwendijk/IO.git",
-            branch: "master"
-        ),
-        .package(
-            url: "https://github.com/leviouwendijk/Writers.git",
-            branch: "master"
-        ),
-        .package(
-            url: "https://github.com/leviouwendijk/TestFlows.git",
             branch: "master"
         ),
     ],
@@ -109,33 +92,6 @@ let package = Package(
                 .product(
                     name: "Terminal",
                     package: "Terminal"
-                ),
-            ]
-        ),
-        .executableTarget(
-            name: "TimecodeTestFlows",
-            dependencies: [
-                "Timecode",
-                "TimecodeLTCBridge",
-                .product(
-                    name: "MediaCore",
-                    package: "Media"
-                ),
-                .product(
-                    name: "MediaAV",
-                    package: "Media"
-                ),
-                .product(
-                    name: "IO",
-                    package: "IO"
-                ),
-                .product(
-                    name: "Writers",
-                    package: "Writers"
-                ),
-                .product(
-                    name: "TestFlows",
-                    package: "TestFlows"
                 ),
             ]
         ),
