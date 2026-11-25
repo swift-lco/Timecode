@@ -17,15 +17,15 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/leviouwendijk/Media.git",
+            url: "https://github.com/swift-lco/Media.git",
             branch: "master"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/IO.git",
+            url: "https://github.com/swift-lco/IO.git",
             branch: "master"
         ),
         .package(
-            url: "https://github.com/leviouwendijk/Writers.git",
+            url: "https://github.com/swift-lco/Writers.git",
             branch: "master"
         ),
         .package(
